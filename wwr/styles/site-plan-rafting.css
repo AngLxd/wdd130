@@ -15,11 +15,11 @@ Fonts are separated by a & */
   --paragraph-font: Roboto Mono;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #E07A5F;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #3D405B; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #E07A5F  ;
+  --headline-color-on-white: #c54a27;  /* headlines on a white background */ 
+  --headline-color-on-color: #3D405B; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #6e7292; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: rgb(255, 255, 255); /* paragraph text on a colored background */ 
+  --paragraph-background-color: #bb3d1b  ;
   --nav-link-color: #E07A5F;
   --nav-background-color: #3D405B;
   --nav-hover-link-color: white;
