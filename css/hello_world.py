@@ -1,9 +1,4 @@
-print('Hello world')
-
-
-
-
-
+#print('Hello world')
 
 
 name= input('What is your favorite color?')

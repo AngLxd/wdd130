@@ -1,0 +1,25 @@
+def meal_price_calculator():
+    print("Welcome to the White River Market!")
+    
+    num_items = int(input("How many meal items would you like to buy? "))
+    items = []
+    
+    for i in range(num_items):
+        item_name = input(f"Enter the name of meal item {i+1}: ")
+        item_price = float(input(f"Enter the price of {item_name}: "))
+        items.append((item_name, item_price))
+        tax_rate = 0.08
+        tip_rate = float(input("Enter the tip percentage (e.g., 15 for 15%): ")) / 100
+        
+        subtotal = sum(item[1] for item in items)
+        tax = subtotal * tax_rate
+        tip = subtotal * tip_rate
+        total = subtotal + tax + tip
+        print("\n-Itemized Receipt- ")
+        for item in items:
+            print(f"{item[0]}: ${item[1]:.2f}")
+            print(f"Subtotal: ${subtotal:.2f}")
+            print(f"Tax (8%): ${tax:.2f}")
+            print(f"Tip ({tip_rate*100}%): ${tip:.2f}")
+            print(f"Grand Total: ${total:.2f}")
+            meal_price_calculator()

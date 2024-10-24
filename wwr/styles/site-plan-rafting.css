@@ -53,6 +53,10 @@ hr {
   margin: 35px 0;
   background: var(--accent1-color);
 }
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 header {
   padding: 1em;
   text-align: center;
@@ -129,6 +133,10 @@ nav a:hover {
     ". . . top . ."
     ". left left right right ."
     "page2 page2 . . page3 page3";
+}
+#background {
+  height: 725px;
+  background-color: #9fbfd4;
 }
 .sitemap > div {
   text-align: center;

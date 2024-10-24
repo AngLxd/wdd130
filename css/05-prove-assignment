@@ -1,0 +1,80 @@
+def start_game():
+    print("You arrive at a mysterious old mansion. The door creaks open by itself.")
+    print("Do you want to ENTER the mansion (cool choice) or LEAVE immediately? (chicken out)")
+    
+    choice = input("Type 'enter' or 'leave': ").lower()
+    
+    if choice == "enter":
+        enter_mansion()
+    elif choice == "leave":
+        leave_mansion()
+    else:
+        print("Invalid choice. Please type 'enter' or 'leave'.")
+        start_game()
+        #boo
+
+def enter_mansion():
+    print("\nYou step inside the mansion. The door slams shut behind you.")
+    print("Ahead of you there is a STAIRCASE leading upstairs, and a DOOR to the left.")
+    print("Do you want to go UPSTAIRS or OPEN the door?")
+    
+    choice = input("Type 'upstairs' or 'open': ").lower()
+    
+    if choice == "upstairs":
+        upstairs()
+    elif choice == "open":
+        open_door()
+    else:
+        print("Invalid choice. Please type 'upstairs' or 'open'.")
+        enter_mansion()
+
+def leave_mansion():
+    print("\nYou decide this mansion is too creepy for you, lol.")
+    print("As you turn to leave, a mysterious figure appears in front of you.")
+    print("Do you want to RUN or TALK to the figure?")
+    
+    choice = input("Type 'run' or 'talk': ").lower()
+    
+    if choice == "run":
+        print("You run as fast as you can and escape the mansion safely! (chiken boo boo)")
+    elif choice == "talk":
+        print("The figure speaks softly and tells you that the mansion is cursed. You are the only one who can break the curse.")
+        print("You gather your courage and decide to re-enter the mansion to solve the mystery.")
+        enter_mansion()
+    else:
+        print("Invalid choice. Please type 'run' or 'talk'.")
+        leave_mansion()
+
+def upstairs():
+    print("\nYou go upstairs and find a dusty hallway with three doors.")
+    print("Do you want to enter the FIRST, SECOND, or THIRD door?")
+    
+    choice = input("Type 'first', 'second', or 'third': ").lower()
+    
+    if choice == "first":
+        print("You enter the first room and find an old library filled with books. A ghostly figure whispers, 'Find the book of secrets...'")
+    elif choice == "second":
+        print("You enter the second room and find a bedroom. The air feels colder here, and you sense someone watching you.")
+    elif choice == "third":
+        print("You enter the third room and fall through a trapdoor! You land back in the mansion's entrance.")
+        enter_mansion()
+    else:
+        print("Invalid choice. Please type 'first', 'second', or 'third'.")
+        upstairs()
+
+def open_door():
+    print("\nYou open the door and find a grand dining room. The table is set for a feast, but no one is there.")
+    print("Suddenly, the lights flicker and you hear footsteps. Do you want to INVESTIGATE or HIDE under the table?")
+    #hi
+    choice = input("Type 'investigate' or 'hide': ").lower()
+    
+    if choice == "investigate":
+        print("You bravely step forward to investigate the sound, but find nothing. The footsteps stop, and the room falls silent.")
+    elif choice == "hide":
+        print("You hide under the table. The footsteps stop, and when you crawl out, the dining room is empty again.")
+    else:
+        print("Invalid choice. Please type 'investigate' or 'hide'.")
+        open_door()
+
+# code to start the game lol
+start_game()
