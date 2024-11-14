@@ -11,7 +11,6 @@ def start_game():
     else:
         print("Invalid choice. Please type 'enter' or 'leave'.")
         start_game()
-        #boo
 
 def enter_mansion():
     print("\nYou step inside the mansion. The door slams shut behind you.")
@@ -36,7 +35,7 @@ def leave_mansion():
     choice = input("Type 'run' or 'talk': ").lower()
     
     if choice == "run":
-        print("You run as fast as you can and escape the mansion safely! (chiken boo boo)")
+        print("You run as fast as you can and escape the mansion safely!")
     elif choice == "talk":
         print("The figure speaks softly and tells you that the mansion is cursed. You are the only one who can break the curse.")
         print("You gather your courage and decide to re-enter the mansion to solve the mystery.")
@@ -52,7 +51,7 @@ def upstairs():
     choice = input("Type 'first', 'second', or 'third': ").lower()
     
     if choice == "first":
-        print("You enter the first room and find an old library filled with books. A ghostly figure whispers, 'Find the book of secrets...'")
+        print("You enter the first room and find an old library filled with books. A ghost appears and says, 'Find the book of secrets...'")
     elif choice == "second":
         print("You enter the second room and find a bedroom. The air feels colder here, and you sense someone watching you.")
     elif choice == "third":
@@ -65,16 +64,14 @@ def upstairs():
 def open_door():
     print("\nYou open the door and find a grand dining room. The table is set for a feast, but no one is there.")
     print("Suddenly, the lights flicker and you hear footsteps. Do you want to INVESTIGATE or HIDE under the table?")
-    #hi
+    
     choice = input("Type 'investigate' or 'hide': ").lower()
     
     if choice == "investigate":
         print("You bravely step forward to investigate the sound, but find nothing. The footsteps stop, and the room falls silent.")
     elif choice == "hide":
-        print("You hide under the table. The footsteps stop, and when you crawl out, the dining room is empty again.")
+        print("You hide under the table. The footsteps stop, when you crawl out the dining room is empty again.")
     else:
         print("Invalid choice. Please type 'investigate' or 'hide'.")
         open_door()
-
-# code to start the game lol
 start_game()
